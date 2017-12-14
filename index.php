@@ -22,13 +22,13 @@ if (session_status() == PHP_SESSION_NONE) {
 
     include 'databaseconnection.php';
 
-    $sql = "SELECT * FROM tours";
+    $sql = "SELECT * FROM tours,packages WHERE packages.packageID=tours.packageID ";
     $result = $conn->query($sql);
+
     if ($result->num_rows > 0) {
     // output data of each row
 
     ?>
-
 
     <table id='table1' class='table table-striped table-hover table-bordered' width="100%" cellspacing="">
         <thead>
@@ -45,11 +45,15 @@ if (session_status() == PHP_SESSION_NONE) {
             </td>
             <td>keywords</td>
             <td>kort</td>
+            <td>Package</td>
+            <td>Package picture</td>
         </tr></thead>
         <tbody>
         <?php
 
         while ($row = $result->fetch_assoc()) {
+
+
 
 
 
@@ -75,8 +79,17 @@ if (session_status() == PHP_SESSION_NONE) {
 
 
             echo "<td>";
-            echo "<img src=images/".$row["graphic"]." width='120' height='80'> </img>" ;
+            echo "<img src=images/".$row["graphic"]." width='120' height='80' onerror=\"this.src='images/404.jpeg'\"> </img>" ;
             echo "</td>";
+
+
+                echo "<td>";
+                echo $row["packageTitle"];
+                echo "</td>";
+
+                echo "<td>";
+                echo "<img src=images/".$row["packageGraphic"]." width='120' height='80' onerror=\"this.src='images/404.jpeg'\"> </img>" ;
+                echo "</td>";
 
             echo "</tr>";
 
