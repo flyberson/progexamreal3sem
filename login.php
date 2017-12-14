@@ -2,6 +2,7 @@
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }?>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 <form method="post" id="formlogin">
     <p>Username</p>
     <input id="username" type="text" name="username">
@@ -11,8 +12,6 @@ if (session_status() == PHP_SESSION_NONE) {
     <input type="submit">
 
     <?php
-echo "hello";
-echo $_SESSION["user"];
 if (isset($_POST['username'])&&isset($_POST['password'])) {
     $startusername = $_POST['username'];
     $startpassword = $_POST['password'];
