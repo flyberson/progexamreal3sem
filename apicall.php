@@ -1,7 +1,7 @@
 <?php
 
 try {
-    $ch = curl_init('https://localhost/PhpstormProjects/api.php/Orders');
+    $ch = curl_init('https://localhost/PhpstormProjects/explore_california_api.php/Orders');
 
     if (FALSE === $ch)
         throw new Exception('failed to initialize');

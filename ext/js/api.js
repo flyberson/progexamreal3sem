@@ -9,13 +9,17 @@ $(document).ready(function () {
 
 function getpoke(){
 
-    var Json= "http://localhost/PhpstormProjects/progexam_1_3sem/api.php/Orders";
+    var Json= "http://localhost/PhpstormProjects/progexamreal3sem/explore_california_api.php/tours";
 
     $.getJSON(Json,function (data) {
         for (var i = 0; i < data.length; i++) {
-            var obj = data[i].ORD_ID;
-            var amount = data[i].ORD_AMOUNT;
-            $("#orderlist").append("orderid=" + obj+"  OrderAmount="+amount+"\n");
+            var tourname = data[i].tourName;
+            var price = data[i].price;
+            var description = data[i].description;
+            var keywords = data[i].keywords;
+            var image = '<img src="../../images/'+ data[i].graphic+'"';
+
+            $("#tablebody").append("<tr>"+ "<td>"+tourname+"</td>"+ "<td>"+price+"</td>"+"<td>"+description+"</td>"+ "<td>"+keywords+"</td>"+ "<td>"+image+"</td>"+"</tr>");
         }
     });
 

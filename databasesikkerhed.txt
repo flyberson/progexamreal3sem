@@ -1,0 +1,4 @@
+1) prepared statements
+
+
+2) stored procedures

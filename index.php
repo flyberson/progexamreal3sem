@@ -2,7 +2,7 @@
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
-// include 'requireLogin.php';
+ include 'requireLogin.php';
 ?>
 <html>
 <header><title>This is title</title>
@@ -28,6 +28,7 @@ if (session_status() == PHP_SESSION_NONE) {
     // output data of each row
 
     ?>
+
 <h1>hello</h1>
     <table id='table1' class='table table-striped table-hover table-bordered' width="100%" cellspacing="">
         <thead>
@@ -74,12 +75,9 @@ if (session_status() == PHP_SESSION_NONE) {
 
 
             echo "<td>";
-           // echo <a$row["graphic"];
+            echo "<img src=images/".$row["graphic"]." width='120' height='80'> </img>" ;
             echo "</td>";
 
-            echo "<td>";
-          
-            echo "</td>";
             echo "</tr>";
 
 

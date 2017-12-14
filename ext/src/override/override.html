@@ -2,12 +2,40 @@
 <html>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="../../js/api.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+
 
 <head>
 	<title></title>
 </head>
 <body>
 <button id="bt1">click here</button>
-<div id="orderlist"></div>
+
+
+<table id='table1' class='table table-striped table-hover table-bordered' width="100%" cellspacing="">
+	<thead>
+	<tr>
+
+		<td>
+			Tur navn
+		</td>
+		<td>
+			Price
+		</td>
+		<td>
+			beskrivelse
+		</td>
+		<td>keywords</td>
+		<td>kort</td>
+	</tr></thead>
+	<tbody id="tablebody">
+	<tr id="tablerow"></tr>
+	</tbody>
+</table>
 </body>
 </html>

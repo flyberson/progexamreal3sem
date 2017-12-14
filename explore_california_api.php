@@ -1,18 +1,18 @@
 <?php
+
+/* opgave 6 Det her er en rest api med kun get kald
+jeg kan lave en if statement der kigger efter put delete og andre http requests
+*/
 //Acess with .php/tablename
 header("Access-Control-Allow-Origin: *");
  
 //Get String array with the path requests without delimiter "/"
 $path_request = explode('/', trim($_SERVER['PATH_INFO'],'/'));
 
-//db variables
-$host = "localhost";
-$username = "root";
-$password = "yoyo";
-$dbname = "progexam_1";
 
-// connect to the mysql database and set utf8 charset
-$conn = new mysqli($host, $username, $password, $dbname);
+
+// get Database connection
+include 'databaseconnection.php';
 $conn->set_charset("utf8");
  
 // retrieve table by shifting first array element and replacing special chars

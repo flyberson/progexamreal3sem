@@ -11,7 +11,8 @@ if (session_status() == PHP_SESSION_NONE) {
     <input type="submit">
 
     <?php
-
+echo "hello";
+echo $_SESSION["user"];
 if (isset($_POST['username'])&&isset($_POST['password'])) {
     $startusername = $_POST['username'];
     $startpassword = $_POST['password'];
@@ -27,6 +28,6 @@ if (isset($_POST['username'])&&isset($_POST['password'])) {
     $_SESSION["user"]=$first;
     $_SESSION["password"]=$second;
 
-      //header("Location:http://localhost/PhpstormProjects/progexamreal3sem/index.php");
+      header("Location:http://localhost/PhpstormProjects/progexamreal3sem/index.php");
     }}
     ?>
