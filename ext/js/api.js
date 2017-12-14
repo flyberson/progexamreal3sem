@@ -1,13 +1,14 @@
 $(document).ready(function () {
 
-    $("#bt1").click(function () {
+
 
         getpoke();
-    });
+
 
 })
 
 function getpoke(){
+
 
     var Json= "http://localhost/PhpstormProjects/progexamreal3sem/explore_california_api.php/tours";
 
@@ -18,6 +19,7 @@ function getpoke(){
             var description = data[i].description;
             var keywords = data[i].keywords;
             var image = '<img src="../../images/'+ data[i].graphic+'"';
+
 
             $("#tablebody").append("<tr>"+ "<td>"+tourname+"</td>"+ "<td>"+price+"</td>"+"<td>"+description+"</td>"+ "<td>"+keywords+"</td>"+ "<td>"+image+"</td>"+"</tr>");
         }

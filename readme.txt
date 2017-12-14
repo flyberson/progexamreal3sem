@@ -32,10 +32,14 @@ ext/manifest.json linje 17
   var Json= "http://localhost/PhpstormProjects/progexamreal3sem/explore_california_api.php/tours";
   Skal ændres til din mapping
 
+  progexamreal3sem/java/src/UrlReader.java linje 9
+   URL api = new URL("http://localhost/PhpstormProjects/progexamreal3sem/explore_california_api.php/tours");
+   Skal ændres til din mapping for api
+
 opgave 11)
 google cloud
 https://progexamreal3sem.appspot.com/index.php
-virker ikke pt pga login og manglende database.
+virker ikke pt pga login og manglende database. Har fjernet login på cloud
 
 opgave 10)
 github
@@ -73,3 +77,6 @@ databasesikkerhed.txt
 
 opgave 9)
 brugerdata.txt
+
+opgave 12)
+progexamreal3sem/java/jsonmain.java

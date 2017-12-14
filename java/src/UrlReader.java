@@ -13,7 +13,7 @@ try {
     String inputLine;
     while ((inputLine = in.readLine()) != null)
     {
-        System.out.println("gets here");
+
         output +=inputLine;}
     in.close();
 }
