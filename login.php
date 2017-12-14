@@ -17,7 +17,7 @@ if (isset($_POST['username'])&&isset($_POST['password'])) {
     $startpassword = $_POST['password'];
     include 'databaseconnection.php';
 
-    $sql = "select * from admin where userName ='".$startusername."'";
+    $sql = "select * from admin where userName ='".$startusername."'"."AND password='".$startpassword."'";
     $result = $conn->query($sql);
     if ($result!= false) {
         $row = mysqli_fetch_assoc($result);

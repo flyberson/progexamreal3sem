@@ -1,4 +1,9 @@
 1) prepared statements
+man laver sql statements først og indsætter værdier senere
+f.eks. Insert into table values (?,?,?) denne statement prepare man med ukendte værdier
+Så har man lavet alt sql, før man spørger om bruger input. På denne måde ved du at der ikke skal være sql i input og kan kigge efter det.
 
 
 2) stored procedures
+f.eks. laver views og select statements på forhånd.
+f.eks. select from tours where price >200. Dette sql kald laver man til en applikations funktion som brugeren kan kalde.

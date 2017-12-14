@@ -1,1 +1,6 @@
-salting hashing
+1) salting
+tilføje tilfældige bogstaver og tegn bag på et kodeord
+
+2) hashing smide lignede objekter ind i samme bucket.
+f.eks. 9 buckets og kodeord med kun tal
+så ville kodeord der slutter på 1 komme i første bucket osv.

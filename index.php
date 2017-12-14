@@ -15,8 +15,8 @@ if (session_status() == PHP_SESSION_NONE) {
     <script src="ext/js/api.js"></script>
 
     <body>
-    <button id="bt1" onclick="getpoke()">Click here</button>
-    <h1>Index</h1>
+
+<h1>Welcome to Explore California</h1>
 
     <?php
 
@@ -29,7 +29,7 @@ if (session_status() == PHP_SESSION_NONE) {
 
     ?>
 
-<h1>hello</h1>
+
     <table id='table1' class='table table-striped table-hover table-bordered' width="100%" cellspacing="">
         <thead>
         <tr>
