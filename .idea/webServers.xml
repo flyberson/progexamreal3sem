@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="6cb56234-c096-434e-8e45-ac05235cc9fe" name="lamp" url="http://localhost">
+        <fileTransfer port="0" mountedRoot="/var/www/html/PhpstormProjects" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>
